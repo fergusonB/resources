@@ -29,6 +29,7 @@
 * sudo ufw status
 ### List network connections
  * sudo ss -tupln
+ * netstat -rn show networks accessible via the vpn
 ### Disable pings
 * sudo nano /etc/ufw/before.rules
     `-A ufw-before-input -p icmp --icmp-type echo-request -j DROP`
